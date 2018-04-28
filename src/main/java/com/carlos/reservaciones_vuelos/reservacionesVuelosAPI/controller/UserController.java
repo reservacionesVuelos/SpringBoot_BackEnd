@@ -20,6 +20,7 @@ public class UserController {
 
 
     @RequestMapping( value = "/", method = RequestMethod.GET )
+    @CrossOrigin
     public ResponseEntity<?> getUsers () {
         return new ResponseEntity<>(userService.getUsers(), HttpStatus.ACCEPTED);
     }
