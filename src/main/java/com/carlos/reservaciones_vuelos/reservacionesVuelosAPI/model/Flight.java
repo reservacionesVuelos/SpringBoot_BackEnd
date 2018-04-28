@@ -2,6 +2,7 @@ package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class Flight {
 
@@ -19,12 +20,15 @@ public class Flight {
 
     private Long cost;
 
+    private int id;
+
+    private static AtomicInteger globalId = new AtomicInteger(0);
 
     public Flight() {
     }
 
     public Flight(String flightImageUrl, String origin, String destiny, Long cost, Date flightDay) {
-
+        this.id= generateId();
         this.flightImageUrl = flightImageUrl;
         this.origin = origin;
         this.destiny = destiny;
@@ -43,6 +47,20 @@ public class Flight {
 
     }
 
+    /**
+     * this method should be thread-save
+     */
+    private static int generateId(){
+        return globalId.addAndGet(1);
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getFlightImageUrl() {
         return flightImageUrl;
@@ -75,6 +93,14 @@ public class Flight {
 
     public void setFlightDay(Date flightDay) {
         this.flightDay = flightDay;
+    }
+
+    public Long getCost() {
+        return cost;
+    }
+
+    public void setCost(Long cost) {
+        this.cost = cost;
     }
 
     @Override
