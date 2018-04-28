@@ -32,8 +32,6 @@ jobs:
           - v1-dependencies-
 
       - run: gradle dependencies
-          name: chmod permissions
-            command: chmod +x ./gradlew
 
       - save_cache:
           paths:
