@@ -5,8 +5,7 @@ import java.util.Date;
 
 public class Flight {
 
-    private String enterpriseName;
-    private String enterpriseImageUrl;
+    private String flightImageUrl;
     private String origin;
     private String destiny;
     //midle cost
@@ -24,9 +23,9 @@ public class Flight {
     public Flight() {
     }
 
-    public Flight(String enterpriseName, String enterpriseImageUrl, String origin, String destiny, Long cost, Date flightDay) {
-        this.enterpriseName = enterpriseName;
-        this.enterpriseImageUrl = enterpriseImageUrl;
+    public Flight(String flightImageUrl, String origin, String destiny, Long cost, Date flightDay) {
+
+        this.flightImageUrl = flightImageUrl;
         this.origin = origin;
         this.destiny = destiny;
         this.flightDay = flightDay;
@@ -44,20 +43,13 @@ public class Flight {
 
     }
 
-    public String getEnterpriseName() {
-        return enterpriseName;
+
+    public String getFlightImageUrl() {
+        return flightImageUrl;
     }
 
-    public void setEnterpriseName(String enterpriseName) {
-        this.enterpriseName = enterpriseName;
-    }
-
-    public String getEnterpriseImageUrl() {
-        return enterpriseImageUrl;
-    }
-
-    public void setEnterpriseImageUrl(String enterpriseImageUrl) {
-        this.enterpriseImageUrl = enterpriseImageUrl;
+    public void setFlightImageUrl(String flightImageUrl) {
+        this.flightImageUrl = flightImageUrl;
     }
 
     public String getOrigin() {
@@ -88,8 +80,7 @@ public class Flight {
     @Override
     public String toString() {
         return "Flight{" +
-                "enterpriseName='" + enterpriseName + '\'' +
-                ", enterpriseImageUrl='" + enterpriseImageUrl + '\'' +
+                "flightImageUrl='" + flightImageUrl + '\'' +
                 ", origin='" + origin + '\'' +
                 ", destiny='" + destiny + '\'' +
                 ", flightDay=" + flightDay +

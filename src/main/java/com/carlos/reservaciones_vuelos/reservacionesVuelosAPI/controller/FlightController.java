@@ -17,6 +17,6 @@ public class FlightController {
 
     @RequestMapping( value = "/", method = RequestMethod.GET )
     public ResponseEntity<?> getUsers () {
-        return new ResponseEntity<>(flightService.getFlights(), HttpStatus.ACCEPTED);
+        return new ResponseEntity<>(flightService.getAllFlights(), HttpStatus.ACCEPTED);
     }
 }
