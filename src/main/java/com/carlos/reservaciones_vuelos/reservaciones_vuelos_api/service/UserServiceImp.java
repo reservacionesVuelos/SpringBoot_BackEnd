@@ -16,10 +16,11 @@ public class UserServiceImp implements UserService {
 
     private List<User> users = new ArrayList<>();
 
-    @PostConstruct
+
     /*
      * Same population than FlightService to have consistent stubs
      */
+    @PostConstruct
     private void populateSampleData() throws ModelException {
         User carlos = new User(new Long("2105534"));
         Flight flight1 = new Flight("http://neuromarketinglatinoamerica.com/wp-content/uploads/2015/06/avion_avianca.png",

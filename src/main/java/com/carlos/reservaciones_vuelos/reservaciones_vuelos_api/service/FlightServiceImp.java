@@ -14,10 +14,11 @@ public class FlightServiceImp implements FlightService {
 
     private List<Airline> airlines = new ArrayList<>();
 
-    @PostConstruct
+
     /*
      * Same population than UserService to have consistent stubs
      */
+    @PostConstruct
     private void populateSampleData() throws ModelException {
         //Avianca population
         Flight flight1 = new Flight("http://neuromarketinglatinoamerica.com/wp-content/uploads/2015/06/avion_avianca.png",

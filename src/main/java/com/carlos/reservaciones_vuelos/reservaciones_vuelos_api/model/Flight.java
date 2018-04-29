@@ -13,7 +13,7 @@ public class Flight {
     //midle cost
     private final static Long MORNING_COST=new Long("2");
     //lower cost
-    private final static Long AFTERNOON_COST=new Long("1");
+    //private final static Long AFTERNOON_COST=new Long("1");
     //maximum cost
     private final static Long WEEKENDS_COST=new Long("3");
 
