@@ -43,7 +43,7 @@ public class Flight {
         //check if the flight is in the morning
         if(hour < 12) costToReplace = cost*MORNING_COST;
         //check if the cost is in the weekends
-        if(dayOfWeek>5) costToReplace = cost*WEEKENDS_COST;
+        if(dayOfWeek==Calendar.SUNDAY || dayOfWeek == Calendar.SATURDAY) costToReplace = cost*WEEKENDS_COST;
         this.cost = costToReplace;
 
     }

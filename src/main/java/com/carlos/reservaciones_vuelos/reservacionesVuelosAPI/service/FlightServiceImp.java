@@ -23,26 +23,27 @@ public class FlightServiceImp implements FlightService {
     private void populateSampleData() throws ModelException {
         //Avianca population
         Flight flight1 = new Flight("http://neuromarketinglatinoamerica.com/wp-content/uploads/2015/06/avion_avianca.png",
-                "Bogotá", "Cartagena", new Long("750000"),
-                new Date(new Long("1525683600000")));
+                "Bogotá", "Cartagena", new Long("1000000"),
+                new Date(new Long("1525596200000")));
         Flight flightAfternoon = new Flight("http://i1370.photobucket.com/albums/ag244/aviatoraero/AirbusA321-Avianca_zps694c8e36.png",
-                "Bogotá", "Cartagena", new Long("1750000"),
+                "Bogotá", "Cartagena", new Long("1000000"),
                 new Date(new Long("1525708800000")));
+        Flight flightAfternoon4 = new Flight("http://econoflete.com/wp-content/uploads/2016/09/avianca_avion.png",
+                "Bogotá", "Cartagena", new Long("1000000"),
+                new Date(new Long("1525740000000")));
         Flight flightAfternoon2 = new Flight("http://fsxaibureau.com/wp-content/uploads/2013/07/PR-AVJ.png",
                 "Pereira", "Montería", new Long("350000"),
                 new Date(new Long("1525708800000")));
         Flight flightAfternoon3 = new Flight("http://travelobservers.com/wp-content/uploads/2016/06/aircraft-3.png",
                 "Bogotá", "San Andrés", new Long("750000"),
                 new Date(new Long("1525719600000")));
-        Flight flightAfternoon4 = new Flight("http://econoflete.com/wp-content/uploads/2016/09/avianca_avion.png",
-                "Bogotá", "Cartagena", new Long("750000"),
-                new Date(new Long("1530990000000")));
+
         ArrayList<Flight> aviancaFlights = new ArrayList();
         aviancaFlights.add(flight1);
         aviancaFlights.add(flightAfternoon);
+        aviancaFlights.add(flightAfternoon4);
         aviancaFlights.add(flightAfternoon2);
         aviancaFlights.add(flightAfternoon3);
-        aviancaFlights.add(flightAfternoon4);
         Airline avianca = new Airline("Avianca", aviancaFlights);
         //Viva colombia population
         Flight flight2 = new Flight("https://www.vivacolombia.co/upload/co/avion.png",
@@ -88,6 +89,8 @@ public class FlightServiceImp implements FlightService {
         airlines.add(latam);
 
     }
+
+
 
     @Override
     public List<Airline> getAllFlights() {
