@@ -1,5 +1,6 @@
 package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class User {
 
     public User(Long cedule) {
         this.cedule = cedule;
+        reservationList = new ArrayList<>();
     }
 
     public User(Long cedule, List<Reservation> reservationList) {

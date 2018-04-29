@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.util.Date;
 
+/**
+ * Class created for persist a user and a flight on the data base (because is many to many relation)
+ */
 public class Reservation {
 
     private Flight flight;

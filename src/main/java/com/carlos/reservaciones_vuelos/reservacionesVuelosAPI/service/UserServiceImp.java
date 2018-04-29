@@ -84,6 +84,18 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
+    public List<Flight> obtainReservedFlights(Long cedule) throws UserServiceException {
+        User user = getUser(cedule);
+        if(user == null) throw new UserServiceException(UserServiceException.USER_NO_EXIST);
+        List<Flight> flights = new ArrayList<>();
+        for (Reservation reservation:
+             user.getReservationList()) {
+            flights.add(reservation.getFlight());
+        }
+        return flights;
+    }
+
+    @Override
     public List<User> getUsers() {
         return users;
     }

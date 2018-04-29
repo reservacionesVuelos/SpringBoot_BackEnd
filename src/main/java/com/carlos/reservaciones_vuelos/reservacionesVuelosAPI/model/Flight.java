@@ -2,6 +2,7 @@ package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
 
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Flight {
@@ -112,5 +113,24 @@ public class Flight {
                 ", flightDay=" + flightDay +
                 ", cost=" + cost +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Flight)) return false;
+        Flight flight = (Flight) o;
+        return id == flight.id &&
+                Objects.equals(flightImageUrl, flight.flightImageUrl) &&
+                Objects.equals(origin, flight.origin) &&
+                Objects.equals(destiny, flight.destiny) &&
+                Objects.equals(flightDay, flight.flightDay) &&
+                Objects.equals(cost, flight.cost);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(flightImageUrl, origin, destiny, flightDay, cost, id);
     }
 }

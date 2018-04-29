@@ -15,4 +15,6 @@ public interface UserService {
     void createUser(User user) throws ServletException;
 
     boolean joinFlight(Long cedule, Flight flight);
+
+    List<Flight> obtainReservedFlights(Long cedule) throws UserServiceException;
 }
