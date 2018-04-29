@@ -1,15 +1,12 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api;
 
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.Flight;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.User;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.FlightService;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.FlightServiceImp;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.UserService;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.UserServiceImp;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.Flight;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.User;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service.UserService;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service.UserServiceImp;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 

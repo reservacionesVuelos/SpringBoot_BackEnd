@@ -1,6 +1,6 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service;
 
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.Airline;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.Airline;
 
 import java.util.List;
 

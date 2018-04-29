@@ -1,13 +1,11 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service;
 
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.*;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.*;
 import org.springframework.cglib.core.CollectionUtils;
-import org.springframework.cglib.core.Predicate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 

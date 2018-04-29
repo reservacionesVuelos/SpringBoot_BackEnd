@@ -1,7 +1,7 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service;
 
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.Flight;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.User;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.Flight;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.User;
 
 import javax.servlet.ServletException;
 import java.util.List;

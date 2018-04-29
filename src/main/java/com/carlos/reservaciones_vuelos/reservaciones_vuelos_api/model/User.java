@@ -1,7 +1,6 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class User {

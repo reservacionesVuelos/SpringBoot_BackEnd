@@ -1,10 +1,10 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service;
 
 
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.Flight;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.ModelException;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.Reservation;
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.User;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.Flight;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.ModelException;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.Reservation;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;

@@ -1,6 +1,6 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.controller;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.controller;
 
-import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.FlightService;
+import com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.service.FlightService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

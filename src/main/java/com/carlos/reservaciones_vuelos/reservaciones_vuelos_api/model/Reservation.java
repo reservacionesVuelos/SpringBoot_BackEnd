@@ -1,8 +1,6 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import java.util.Date;
 
 /**
  * Class created for persist a user and a flight on the data base (because is many to many relation)

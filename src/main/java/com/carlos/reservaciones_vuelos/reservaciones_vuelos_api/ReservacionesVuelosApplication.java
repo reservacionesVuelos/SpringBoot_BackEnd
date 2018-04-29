@@ -1,4 +1,4 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

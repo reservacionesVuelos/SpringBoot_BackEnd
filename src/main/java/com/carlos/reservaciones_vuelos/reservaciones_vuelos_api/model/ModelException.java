@@ -1,4 +1,4 @@
-package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
+package com.carlos.reservaciones_vuelos.reservaciones_vuelos_api.model;
 
 public class ModelException extends Exception {
 
