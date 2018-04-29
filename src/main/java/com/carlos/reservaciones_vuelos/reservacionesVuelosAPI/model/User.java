@@ -7,20 +7,17 @@ public class User {
 
 
     private Long cedule;
-    private Date birthdate;
     private List<Reservation> reservationList;
 
     public User() {
     }
 
-    public User(Long cedule, Date birthdate) {
+    public User(Long cedule) {
         this.cedule = cedule;
-        this.birthdate = birthdate;
     }
 
-    public User(Long cedule, Date birthdate, List<Reservation> reservationList) {
+    public User(Long cedule, List<Reservation> reservationList) {
         this.cedule = cedule;
-        this.birthdate = birthdate;
         this.reservationList = reservationList;
     }
 
@@ -31,14 +28,6 @@ public class User {
 
     public void setCedule(Long cedule) {
         this.cedule = cedule;
-    }
-
-    public Date getBirthdate() {
-        return birthdate;
-    }
-
-    public void setBirthdate(Date birthdate) {
-        this.birthdate = birthdate;
     }
 
     public List<Reservation> getReservationList() {
@@ -53,7 +42,6 @@ public class User {
     public String toString() {
         return "User{" +
                 "cedule=" + cedule +
-                ", birthdate=" + birthdate +
                 ", reservationList=" + reservationList +
                 '}';
     }

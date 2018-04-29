@@ -1,5 +1,6 @@
 package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.controller;
 
+import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.Flight;
 import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model.User;
 import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.UserService;
 import io.jsonwebtoken.Jwts;
@@ -23,6 +24,12 @@ public class UserController {
     @CrossOrigin
     public ResponseEntity<?> getUsers () {
         return new ResponseEntity<>(userService.getUsers(), HttpStatus.ACCEPTED);
+    }
+
+    @RequestMapping( value = "/{cedule}/joinFlight", method = RequestMethod.POST )
+    @CrossOrigin
+    public ResponseEntity<?> joinFlight (@PathVariable Long cedule, @RequestBody Flight flight) {
+        return new ResponseEntity<>(userService.joinFlight(cedule,flight), HttpStatus.ACCEPTED);
     }
 
 
