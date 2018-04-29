@@ -1,8 +1,9 @@
 package com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class Airline {
+public class Airline{
 
     private String name;
     private List<Flight> flightList;
@@ -13,6 +14,11 @@ public class Airline {
     public Airline(String name, List<Flight> flightList) {
         this.name = name;
         this.flightList = flightList;
+    }
+
+
+    public static Airline clone(Airline toClone){
+        return new Airline(toClone.getName(),new ArrayList<>(toClone.flightList));
     }
 
     public String getName() {

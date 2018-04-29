@@ -4,10 +4,7 @@ import com.carlos.reservaciones_vuelos.reservacionesVuelosAPI.service.FlightServ
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping( "flight" )
@@ -20,5 +17,11 @@ public class FlightController {
     @CrossOrigin
     public ResponseEntity<?> getAllFlights () {
         return new ResponseEntity<>(flightService.getAllFlights(), HttpStatus.ACCEPTED);
+    }
+
+    @RequestMapping( value = "/origin/{location}", method = RequestMethod.GET )
+    @CrossOrigin
+    public ResponseEntity<?> getFlightsByOriginLocation (@PathVariable String location) {
+        return new ResponseEntity<>(flightService.getFlightsByOriginLocation(location), HttpStatus.ACCEPTED);
     }
 }

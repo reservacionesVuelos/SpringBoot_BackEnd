@@ -7,4 +7,6 @@ import java.util.List;
 public interface FlightService {
 
     List<Airline> getAllFlights();
+
+    List<Airline> getFlightsByOriginLocation(String location);
 }
